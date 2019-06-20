@@ -36,7 +36,11 @@ module.exports = {
                     // 'sass-loader?outputStyle=compressed'
                 ],
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader'
+              }
         ]
     },
     devtool: 'source-map',

@@ -1,1 +1,2 @@
-console.log("!")
+var loading = require('./loading.js')
+
